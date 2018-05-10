@@ -104,6 +104,7 @@ data:
 
       # https://github.com/prometheus/prometheus/blob/master/documentation/examples/prometheus-kubernetes.yml#L119
       - job_name: 'kubernetes-services'
+        metrics_path: /
         params:
           module: [http_2xx]
         kubernetes_sd_configs:
